@@ -36,8 +36,9 @@ class UsersController < ApplicationController
 
     private
 
+    # i am not sure if it should be password or password digest
     def user_params
-        params.require(:user).permit(:username, :password_digest, :location, :website, :bio, :image)
+        params.require(:user).permit(:username, :password, :location, :website, :bio, :image)
     end
 
 end
