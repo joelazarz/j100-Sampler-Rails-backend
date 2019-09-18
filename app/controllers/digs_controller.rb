@@ -1,0 +1,2 @@
+class DigsController < ApplicationController
+end

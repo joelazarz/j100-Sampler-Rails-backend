@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  kit: one
+  user: one
+  name: MyString
+  dig_pad_start: 1
+  dig_pad_end: 1
+
+two:
+  kit: two
+  user: two
+  name: MyString
+  dig_pad_start: 1
+  dig_pad_end: 1

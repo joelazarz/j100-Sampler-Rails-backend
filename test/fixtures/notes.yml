@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  kit: one
+  user: one
+  note: MyText
+  note_pad_start: 1
+  not_pad_end: 1
+
+two:
+  kit: two
+  user: two
+  note: MyText
+  note_pad_start: 1
+  not_pad_end: 1
