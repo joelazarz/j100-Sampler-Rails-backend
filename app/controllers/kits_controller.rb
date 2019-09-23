@@ -29,7 +29,7 @@ class KitsController < ApplicationController
     private
 
     def kit_params
-        params.permit(:name, :detail, :sample_url, :image_url)
+        params.permit(:name, :detail, :sample, :image)
     end
 
 end

@@ -47,8 +47,8 @@ ActiveRecord::Schema.define(version: 2019_09_18_201601) do
   create_table "kits", force: :cascade do |t|
     t.string "name"
     t.text "detail"
-    t.string "sample_url"
-    t.string "image_url"
+    t.string "sample"
+    t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
