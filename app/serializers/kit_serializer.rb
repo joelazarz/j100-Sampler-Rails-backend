@@ -1,5 +1,5 @@
 class KitSerializer < ActiveModel::Serializer
-  attributes :id, :name, :detail, :sample_path, :image
+  attributes :id, :name, :detail, :sample_url, :image_url
   
   has_many :notes
   has_many :genres
