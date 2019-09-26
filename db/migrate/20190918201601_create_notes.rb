@@ -5,7 +5,7 @@ class CreateNotes < ActiveRecord::Migration[5.2]
       t.belongs_to :user, foreign_key: true
       t.text :note
       t.integer :note_pad_start
-      t.integer :not_pad_end
+      t.integer :note_pad_end
 
       t.timestamps
     end

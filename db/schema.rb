@@ -58,7 +58,7 @@ ActiveRecord::Schema.define(version: 2019_09_18_201601) do
     t.bigint "user_id"
     t.text "note"
     t.integer "note_pad_start"
-    t.integer "not_pad_end"
+    t.integer "note_pad_end"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["kit_id"], name: "index_notes_on_kit_id"
