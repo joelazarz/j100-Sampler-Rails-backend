@@ -29,7 +29,7 @@ class NotesController < ApplicationController
     private
 
     def note_params
-        params.require(:note).permit(:kit_id, :user_id, :note, :note_pad_start, :note_pad_end)
+        params.permit(:kit_id, :user_id, :note, :note_pad_start, :note_pad_end)
     end
 
 end
