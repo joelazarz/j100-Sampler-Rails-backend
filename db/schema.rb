@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 2019_09_18_201601) do
     t.bigint "kit_id"
     t.bigint "user_id"
     t.string "name"
-    t.integer "dig_pad_start"
-    t.integer "dig_pad_end"
+    t.float "dig_pad_start"
+    t.float "dig_pad_end"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["kit_id"], name: "index_digs_on_kit_id"

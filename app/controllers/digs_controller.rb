@@ -29,7 +29,7 @@ class DigsController < ApplicationController
     private
 
     def dig_params
-        params.require(:dig).permit(:kit_id, :user_id, :name, :dig_pad_start, :dig_pad_end)
+        params.permit(:kit_id, :user_id, :name, :dig_pad_start, :dig_pad_end)
     end
 
 end
