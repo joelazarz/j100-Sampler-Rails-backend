@@ -6,6 +6,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :location
       t.string :website
       t.text :bio
+      t.boolean :darkmode
 
       t.timestamps
     end

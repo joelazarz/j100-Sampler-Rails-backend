@@ -71,6 +71,7 @@ ActiveRecord::Schema.define(version: 2019_09_18_201601) do
     t.string "location"
     t.string "website"
     t.text "bio"
+    t.boolean "darkmode"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
