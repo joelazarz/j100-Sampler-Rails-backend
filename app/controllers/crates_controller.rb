@@ -20,6 +20,19 @@ class CratesController < ApplicationController
         crate = Crate.update(crate_params)
     end
 
+    def new 
+        crate = Crate.new
+    end
+
+    def create
+        crate = Crate.create(crate_params)
+        if crate.save
+            render json: crate
+        else
+            render json: {errors: crate.errors.full_messages}
+        end
+    end
+
     private
 
     def crate_params
