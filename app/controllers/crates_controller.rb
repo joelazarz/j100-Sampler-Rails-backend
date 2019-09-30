@@ -23,7 +23,7 @@ class CratesController < ApplicationController
     private
 
     def crate_params
-        params.require(:crate).permit(:user_id, :kit_id)
+        params.require(:crate).permit(:user_id, :kit_id, :name)
     end
 
 end
