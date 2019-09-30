@@ -17,7 +17,8 @@ class UsersController < ApplicationController
     end
 
     def create
-        user = User.create(user_params)
+        user = User.create(username: params[:username], password: params[:password])
+
         render json: user
     end
 
@@ -36,9 +37,8 @@ class UsersController < ApplicationController
 
     private
 
-    # i am not sure if it should be password or password digest
     def user_params
-        params.require(:user).permit(:username, :password, :location, :website, :bio, :darkmode)
+        params.require(:user).permit(:location, :website, :bio, :darkmode)
     end
 
 end
