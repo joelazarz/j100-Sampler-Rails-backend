@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   resources :kits
   resources :users
 
+  patch '/users', to: 'users#update'
+
   post 'signup', to: 'users#create'
   post 'login', to: 'auth#login'
   get '/autologin', to: 'auth#autologin'
